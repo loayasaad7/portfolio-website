@@ -26,7 +26,7 @@ export function ProjectCard({ project }) {
 
       <div className="card-actions">
         <Link className="button primary small" to={`/projects/${project.slug}`}>
-          View Case Study <ArrowRight size={16} aria-hidden="true" />
+          View Project Details <ArrowRight size={16} aria-hidden="true" />
         </Link>
         {project.links.live && (
           <a className="button ghost icon-only" href={project.links.live} target="_blank" rel="noreferrer" aria-label={`${project.name} live demo`}>

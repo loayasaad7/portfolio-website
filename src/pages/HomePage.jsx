@@ -1,4 +1,4 @@
-import { ArrowRight, Code2, Download, Mail, Send } from 'lucide-react'
+﻿import { ArrowRight, Code2, Download, Mail, Send } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { ProjectCard } from '../components/ProjectCard'
 import { SectionHeading } from '../components/SectionHeading'
@@ -41,7 +41,7 @@ export function HomePage() {
           <div className="hero-panel" aria-label="Portfolio summary">
             <div className="summary-card main-summary">
               <p className="summary-label">Product Range</p>
-              <h2>6 complete case studies</h2>
+              <h2>6 complete project stories</h2>
               <p>Education, driving, prayer times, real-time quizzes, AI data tools, and cinema operations.</p>
             </div>
             <div className="summary-grid">
@@ -85,7 +85,7 @@ export function HomePage() {
             <p className="eyebrow">Product surfaces</p>
             <h2>Mobile, admin, backend, and dashboard views</h2>
             <p>
-              Each case study includes a visual area for the product surfaces that matter most: user apps, admin panels, dashboards,
+              Each project includes a visual area for the product surfaces that matter most: user apps, admin panels, dashboards,
               real-time rooms, analytics, and management workflows.
             </p>
           </div>
@@ -129,6 +129,9 @@ export function HomePage() {
               exploration, and management systems.
             </p>
             <p>
+              I am a Computer Science graduate from the University of Haifa.
+            </p>
+            <p>
               I enjoy working across the full stack, from clean user interfaces to secure APIs, databases, admin dashboards,
               authentication, real-time communication, payments, notifications, and deployment-ready architectures.
             </p>
@@ -140,19 +143,20 @@ export function HomePage() {
         <div className="container contact-card">
           <div>
             <p className="eyebrow">Contact</p>
-            <h2>Let’s talk about full-stack product work</h2>
+            <h2>Let's talk about full-stack product work</h2>
             <p>
               Available for roles and projects involving mobile apps, backend systems, admin dashboards, and real product workflows.
+              You can reach me directly at <a href="mailto:loai.isam.asaad@gmail.com">loai.isam.asaad@gmail.com</a>.
             </p>
           </div>
           <div className="contact-actions">
-            <a className="button primary" href="mailto:your-email@example.com">
-              your-email@example.com <Send size={18} aria-hidden="true" />
+            <a className="button primary" href="mailto:loai.isam.asaad@gmail.com" aria-label="Write email to loai.isam.asaad@gmail.com">
+              Write Email <Send size={18} aria-hidden="true" />
             </a>
             <a className="button secondary" href="https://github.com/" target="_blank" rel="noreferrer">
               GitHub <Code2 size={18} aria-hidden="true" />
             </a>
-            <a className="button ghost" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+            <a className="button ghost" href="https://www.linkedin.com/in/loay-asaad/" target="_blank" rel="noreferrer">
               LinkedIn <ArrowRight size={18} aria-hidden="true" />
             </a>
           </div>
@@ -161,7 +165,7 @@ export function HomePage() {
 
       <section className="section compact-section">
         <div className="container next-projects">
-          <h2>Explore Case Studies</h2>
+          <h2>Explore Projects</h2>
           <div className="case-study-links">
             {projects.map((project) => (
               <Link to={`/projects/${project.slug}`} key={project.slug}>
@@ -174,3 +178,4 @@ export function HomePage() {
     </main>
   )
 }
+
