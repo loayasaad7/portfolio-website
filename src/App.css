@@ -582,11 +582,14 @@ p {
 .about-copy {
   display: grid;
   gap: 12px;
+  margin: 0;
+  padding-left: 22px;
 }
 
-.about-copy p {
+.about-copy li {
   margin: 0;
   font-size: 18px;
+  line-height: 1.75;
 }
 
 .contact-section {

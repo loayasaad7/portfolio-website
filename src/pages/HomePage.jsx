@@ -1,4 +1,4 @@
-﻿import { ArrowRight, Code2, Download, Mail, Send } from 'lucide-react'
+﻿import { ArrowRight, Code2, Download, Mail } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { ProjectCard } from '../components/ProjectCard'
 import { SectionHeading } from '../components/SectionHeading'
@@ -28,7 +28,7 @@ export function HomePage() {
                 Contact Me <Mail size={18} aria-hidden="true" />
               </a>
               <a className="button ghost" href={pdfPath} download>
-                Portfolio PDF <Download size={18} aria-hidden="true" />
+                Arabic Portfolio PDF <Download size={18} aria-hidden="true" />
               </a>
             </div>
             <div className="tech-strip" aria-label="Core technologies">
@@ -82,10 +82,10 @@ export function HomePage() {
       <section className="section light-section">
         <div className="container split-section">
           <div>
-            <p className="eyebrow">Product surfaces</p>
-            <h2>Mobile, admin, backend, and dashboard views</h2>
+            <p className="eyebrow">Project Screens</p>
+            <h2>App screens, dashboards, and admin views</h2>
             <p>
-              Each project includes a visual area for the product surfaces that matter most: user apps, admin panels, dashboards,
+              Each project includes a visual area for the screens that matter most: user apps, admin panels, dashboards,
               real-time rooms, analytics, and management workflows.
             </p>
           </div>
@@ -122,20 +122,22 @@ export function HomePage() {
             <p className="eyebrow">About</p>
             <h2>Practical software, not only screens</h2>
           </div>
-          <div className="about-copy">
-            <p>
-              I am a Full-Stack and Mobile Developer focused on building practical software products. My projects include
-              educational platforms, real-time quiz systems, prayer-time applications, driving education tools, AI-powered data
-              exploration, and management systems.
-            </p>
-            <p>
+          <ul className="about-copy">
+            <li>
+              I am a Full-Stack and Mobile Developer focused on building practical software products.
+            </li>
+            <li>
+              My projects include educational platforms, real-time quiz systems, prayer-time applications, driving education tools,
+              AI-powered data exploration, and management systems.
+            </li>
+            <li>
               I am a Computer Science graduate from the University of Haifa.
-            </p>
-            <p>
+            </li>
+            <li>
               I enjoy working across the full stack, from clean user interfaces to secure APIs, databases, admin dashboards,
               authentication, real-time communication, payments, notifications, and deployment-ready architectures.
-            </p>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -150,14 +152,11 @@ export function HomePage() {
             </p>
           </div>
           <div className="contact-actions">
-            <a className="button primary" href="mailto:loai.isam.asaad@gmail.com" aria-label="Write email to loai.isam.asaad@gmail.com">
-              Write Email <Send size={18} aria-hidden="true" />
+            <a className="button primary" href="https://www.linkedin.com/in/loay-asaad/" target="_blank" rel="noreferrer">
+              LinkedIn <ArrowRight size={18} aria-hidden="true" />
             </a>
             <a className="button secondary" href="https://github.com/" target="_blank" rel="noreferrer">
               GitHub <Code2 size={18} aria-hidden="true" />
-            </a>
-            <a className="button ghost" href="https://www.linkedin.com/in/loay-asaad/" target="_blank" rel="noreferrer">
-              LinkedIn <ArrowRight size={18} aria-hidden="true" />
             </a>
           </div>
         </div>
@@ -178,4 +177,5 @@ export function HomePage() {
     </main>
   )
 }
+
 

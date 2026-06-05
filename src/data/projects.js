@@ -16,7 +16,7 @@ export const projects = [
     highlights: [
       'Student and teacher roles with account flows and bilingual Arabic/English UI',
       'Teacher discovery by subject, price, rating, specialty, and availability',
-      'Lesson booking, live video lessons, payments, ratings, and support workflows',
+      'Lesson booking, in-app live video lessons, payments, ratings, and support workflows',
       'Teacher profiles with subjects, qualifications, pricing, and available teaching hours',
       'Operational admin panel for users, teachers, bookings, payments, content, complaints, and statistics',
     ],
